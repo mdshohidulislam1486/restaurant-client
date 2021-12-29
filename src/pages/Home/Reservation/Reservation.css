@@ -1,0 +1,12 @@
+.reservation-bg{
+    background-image: url('../../../images/reservation/reservation1.jpg');
+    background-size:cover;
+    background-position: center;  
+
+}
+
+.reservation-bg1{
+    background-image: url('../../../images/reservation/reservation2.jpg');
+    background-size:cover;
+    background-position: center;  
+}

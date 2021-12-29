@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import item1 from '../../../images/item/item (1).png'
 import item2 from '../../../images/item/item (2).png'
@@ -25,12 +24,18 @@ const Discount = () => {
             <Grid container spacing={2} sx={{display:'flex', justifyContent:'center', margin:'0 auto'}}>
                 <Grid item xs={12} md={4} sx={{textAlign:'center'}} >
                     <img width='80%' src={item2} alt="foodDiscount" />
+                    <Typography variant='h6' sx={{fontWeight:'600'}}>Chill House Special Cake</Typography>
+                    <Typography>30 % discount</Typography>
                 </Grid>
                 <Grid  item xs={12} md={4} sx={{textAlign:'center'}}>
                     <img width='80%' src={item3} alt="foodDiscount" />
+                    <Typography variant='h6' sx={{fontWeight:'600'}}>Chill House Special Dish</Typography>
+                    <Typography>40 % discount</Typography>
                 </Grid>
                 <Grid  item xs={12} md={4} sx={{textAlign:'center'}}>
                     <img  width='80%' src={item1} alt="foodDiscount" />
+                    <Typography variant='h6' sx={{fontWeight:'600'}}>Mix Vegitable with Beef</Typography>
+                    <Typography>50 % discount</Typography>
                 </Grid>
             </Grid>
         </Box>
