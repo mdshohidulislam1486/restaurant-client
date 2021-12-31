@@ -15,7 +15,7 @@ const SeaFood = () => {
         <Box >
             <Container>
                 <Box  sx={{mt:7}}>
-                <Typography variant='h3' sx={{textAlign:'center', fontWeight:'700'}}>
+                <Typography variant='h3' sx={{textAlign:'center', fontWeight:'700', mb:4}}>
                     Our Sea Food Dish 
                 </Typography>
                 <Typography>

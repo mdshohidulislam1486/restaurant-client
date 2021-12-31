@@ -7,7 +7,7 @@ const useCategories = ()=>{
     const [foodCategories, setFoodCategories] =  useState([])
 
     useEffect(()=>{
-        fetch('www.themealdb.com/api/json/v1/1/categories.php')
+        fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         .then(res  => res.json())
         .then(data => setFoodCategories(data.categories))
     },[])
@@ -17,4 +17,4 @@ const useCategories = ()=>{
 }
 
 
-export default useCategories
+export default useCategories;

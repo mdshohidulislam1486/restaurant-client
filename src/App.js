@@ -6,6 +6,7 @@ import Home from './pages/Home/Home/Home';
 import About from './pages/About/About';
 import Foods from './pages/Foods/Foods';
 import AllSeaFoods from './AllSeaFoods/AllSeaFoods';
+import Categories from './pages/Categories/Categories';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/about" element={<About />}></Route>
       <Route path="/foods" element={<Foods />}></Route>
       <Route path="/allseafood" element={<AllSeaFoods />}></Route>
+      <Route path="/categories" element={<Categories></Categories>}></Route>
       </Routes>
     </BrowserRouter>
     </>
