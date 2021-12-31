@@ -10,3 +10,22 @@
     background-size:cover;
     background-position: center;  
 }
+
+.add-project form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-project form input{
+    outline: none;
+    width: 70%;
+    margin: 5px;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+
+    
+}

@@ -1,14 +1,12 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import './Reservation.css'
-import plater1 from '../../../images/reservation/plater1.png'
-import plater2 from '../../../images/reservation/plater2.png'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
+import { Link } from 'react-router-dom';
+import { useForm } from "react-hook-form";
+import axios from 'axios';
+
 
 
 const itemData = [
@@ -30,6 +28,17 @@ const itemData = [
 
 
 const Reservation = () => {
+
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const onSubmit = data => {
+      console.log(data)
+      reset()
+      axios.post('/reservation', data)
+      .then(res =>{
+        
+      })
+    };
+
     return (
         <Box sx={{mt:7}}>   
         
@@ -65,13 +74,21 @@ const Reservation = () => {
                                             ))}
                                         </ImageList>
                                     </Box>
+                                    <Button sx={{backgroundColor:'#212121', my:5}} variant="contained"><Link to='/reservation' style={{textDecoration:'none', color:'#fff', fontWeight:"500"}} >Book a reservation</Link></Button>
                                 </Container>
                             </Grid>
-                            <Grid className='reservation-bg1 reservation' item xs={12} sm={6}>
+                            <Grid className='reservation-bg1 reservation' sx={{justifyContent:'center', alignItems:'center', display:"flex", mp:{xs:7, sm:'none'}}} item xs={12} sm={6}>
                                 <Container>
-                                    <Typography variant='h2' color="#fff">
-                                           
-                                    </Typography>
+                                <Box className='add-project' sx={{textAlign:'center'}}>
+                                    <Typography variant='h4' color='#fff' sx={{fontWeight:"600", my:5}}>Book a reservation!!</Typography>
+                                    <form style={{marginBottom:"5em"}} onSubmit={handleSubmit(onSubmit)}>
+                                        <input required placeholder='Name' {...register("name")} />
+                                        <input required type='date' {...register("date" )} />
+                                        <input placeholder='Number of Seat/Table' {...register("server" )} />
+                                        <input placeholder='Any food preferance ' required {...register("img1" )} />
+                                        <input style={{cursor:'pointer'}} placeholder='name' type="submit" />
+                                    </form>
+                                </Box>
                                 </Container>
                             </Grid>
                         </Grid>

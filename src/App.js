@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './pages/Shared/Header/Header';
 import Home from './pages/Home/Home/Home';
 import About from './pages/About/About';
 import Foods from './pages/Foods/Foods';
+import AllSeaFoods from './AllSeaFoods/AllSeaFoods';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/home" index element={<Home />} />
       <Route path="/about" element={<About />}></Route>
       <Route path="/foods" element={<Foods />}></Route>
+      <Route path="/allseafood" element={<AllSeaFoods />}></Route>
       </Routes>
     </BrowserRouter>
     </>

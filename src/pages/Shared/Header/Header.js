@@ -71,7 +71,7 @@ const {navItem, navIcon, navItemContainer, logoRight, mobileNav, divider} = useS
                 </ListItem>
                 <Divider className={divider}/>
                 <ListItem>
-                    <Link to='/about' className={mobileNav}><ListItemText>About</ListItemText></Link>
+                    <Link to='/allseafood' className={mobileNav}><ListItemText>Sea Food</ListItemText></Link>
                 </ListItem>
                 <Divider className={divider} />
                 <ListItem>
@@ -98,12 +98,12 @@ const {navItem, navIcon, navItemContainer, logoRight, mobileNav, divider} = useS
                 >
                     <MenuIcon  className={navIcon} />
                 </IconButton>
-                <Typography className={logoRight} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    News
+                <Typography className={logoRight} variant="h6" component="div" sx={{ flexGrow: 1, fontFamily:'cursive', fontWeight:'700' }}>
+                    Chill House
                 </Typography>
                 <Box className={navItemContainer}>
                     <Link className={navItem} to='/home'><Button color="inherit">Home</Button></Link>
-                    <Link className={navItem} to='/about'><Button color="inherit">About</Button></Link>
+                    <Link className={navItem} to='/allseafood'><Button color="inherit">Sea Food</Button></Link>
                     <Link className={navItem} to='/foods'><Button color="inherit">Foods</Button></Link>
                 </Box>
                 </Toolbar>

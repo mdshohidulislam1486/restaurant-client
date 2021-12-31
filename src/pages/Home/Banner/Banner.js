@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import chef from '../../../images/banner/chef.png'
 import { Button, Container, Typography } from '@mui/material';
 import './Banner.css'
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -20,9 +21,7 @@ const Banner = () => {
                             <Typography variant='body1' color="#F2F3F5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus cum ex, repellat cumque ipsa exercitationem enim tenetur omnis, hic ab veniam nobis numquam officia fugit repudiandae reiciendis quos quasi inventore. Tempore quasi nulla fugit porro, dolores dolorem? Ipsa quam deserunt reiciendis eum aliquam? Dolores, animi pariatur. Maxime, reprehenderit tempore!
                             </Typography>
-                            <Button sx={{color:'#000', backgroundColor:'#F2F3F5', mt:2}}>
-                                Our Collection
-                            </Button>
+                            <Button sx={{backgroundColor:'#212121', my:5}} variant="contained"><Link to='/reservation' style={{textDecoration:'none', color:'#fff', fontWeight:"500"}} >Our Menues</Link></Button>
 
                         </Grid>
                         <Grid item xs={12} md={6}>
