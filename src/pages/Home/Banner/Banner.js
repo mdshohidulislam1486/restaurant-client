@@ -1,11 +1,12 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import chef from '../../../images/banner/chef.png'
 import { Button, Container, Typography } from '@mui/material';
 import './Banner.css'
 import { Link } from 'react-router-dom';
+
+
 
 const Banner = () => {
     return (

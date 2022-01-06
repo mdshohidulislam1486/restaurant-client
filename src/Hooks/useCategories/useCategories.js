@@ -12,6 +12,8 @@ const useCategories = ()=>{
         .then(data => setFoodCategories(data.categories))
     },[])
 
+  
+
     return[foodCategories]
 
 }

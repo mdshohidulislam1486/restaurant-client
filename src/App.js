@@ -7,6 +7,8 @@ import About from './pages/About/About';
 import Foods from './pages/Foods/Foods';
 import AllSeaFoods from './AllSeaFoods/AllSeaFoods';
 import Categories from './pages/Categories/Categories';
+import OurMenues from './pages/OurMenues/OurMenues';
+import Footer from './pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
       <Route path="/foods" element={<Foods />}></Route>
       <Route path="/allseafood" element={<AllSeaFoods />}></Route>
       <Route path="/categories" element={<Categories></Categories>}></Route>
+      <Route path="/menues" element={<OurMenues></OurMenues>}></Route>
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
     </>
   );
