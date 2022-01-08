@@ -1,7 +1,8 @@
 .footer-bg{
-    background-image: url('../../../images/footer/footer.jpg');
+    background-image: url('../../../images/footer/footer2.jpg');
     background-size:cover;
     height:'100vh';
     object-fit: cover;
+    
 
 }

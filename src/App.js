@@ -9,6 +9,7 @@ import AllSeaFoods from './AllSeaFoods/AllSeaFoods';
 import Categories from './pages/Categories/Categories';
 import OurMenues from './pages/OurMenues/OurMenues';
 import Footer from './pages/Shared/Footer/Footer';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/allseafood" element={<AllSeaFoods />}></Route>
       <Route path="/categories" element={<Categories></Categories>}></Route>
       <Route path="/menues" element={<OurMenues></OurMenues>}></Route>
+      <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

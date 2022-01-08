@@ -10,19 +10,20 @@ import OurMenue from './OurMenue';
 const OurMenues = () => {
 
 const [searchText, setSearchText] = useState('')
-const [ourMenues, setOurMenues] =useMenue()
+const [manues, setManues] = useState([])
 
 useEffect(()=>{
     const url =`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`
     fetch(url)
     .then(res => res.json())
-    .then(data => data.meals)
+    .then(data => setManues(data.meals))
 
-}, [])
+}, [searchText])
 
 const handleSearchField = e =>{
     const searchFood = e.target.value;
     setSearchText(searchFood)
+    console.log(searchFood)
 }
 
     return (
@@ -47,7 +48,7 @@ const handleSearchField = e =>{
             <Box>
                 <Container sx={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'wrap' }}>
                     {
-                        ourMenues?.map(menue =><OurMenue
+                        manues?.map(menue =><OurMenue
                         key={menue.idMeal}
                         menue={menue}
                         >

@@ -1,0 +1,10 @@
+.not-found-bg{
+    background-image: url('../../images/pagenotfound.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}

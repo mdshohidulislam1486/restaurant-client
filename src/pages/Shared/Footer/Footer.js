@@ -71,13 +71,13 @@ const Footer = () => {
                 </Container>
 
             </Box>
-            <Box sx={{backgroundColor:'#000', display:'flex', justifyContent:'center', alignItems:'center', mb:'-20px', p:5 }}>
+            <Box sx={{backgroundColor:'#1B1B1B', display:'flex', justifyContent:'center', alignItems:'center', mb:'-20px', p:5 }}>
                 <Typography color="#fff" variant='body2'>Have some questions about our food?</Typography>
                 <Button sx={{borderRadius:'40%', backgroundColor:'#fff', marginLeft:'1em', padding:'.8em', color:'#000', fontWeight:'700'}}>More About Us</Button>
             </Box>
 
             <Box className='footer-bg'>
-                <Container sx={{display:'flex', justifyContent:'space-between', alignItems:"center"}}>
+                <Container sx={{display:'flex', flexDirection:{xs:'column', sm:"row"}, justifyContent:{sm:'space-between'}, alignItems:"center", flexWrap:{xm:'wrap'}}}>
               
                 <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', py:5, alignItems:'center'}}>
                     <Typography variant='h6' color='#fff'>
@@ -99,7 +99,7 @@ const Footer = () => {
                     <Typography color='#fff'>
                         + 880 1681094634
                     </Typography>
-                    <Box sx={{display:'flex'}}>
+                    <Box sx={{display:'flex', cursor:'pointer'}}>
                         <FacebookIcon sx={{color:'#fff'}}></FacebookIcon>
                         <InstagramIcon sx={{color:'#fff'}}></InstagramIcon>
                         <TwitterIcon sx={{color:'#fff'}}></TwitterIcon>

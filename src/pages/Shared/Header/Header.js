@@ -77,6 +77,10 @@ const {navItem, navIcon, navItemContainer, logoRight, mobileNav, divider} = useS
                 <ListItem>
                     <Link to='/categories' className={mobileNav}><ListItemText>Categories</ListItemText></Link>
                 </ListItem>
+                <Divider className={divider} />
+                <ListItem>
+                    <Link to='/menues' className={mobileNav}><ListItemText>Menues</ListItemText></Link>
+                </ListItem>
             </List>
             <Divider  className={divider}/>
             </Box>
@@ -104,7 +108,8 @@ const {navItem, navIcon, navItemContainer, logoRight, mobileNav, divider} = useS
                 <Box className={navItemContainer}>
                     <Link className={navItem} to='/home'><Button color="inherit">Home</Button></Link>
                     <Link className={navItem} to='/allseafood'><Button color="inherit">Sea Food</Button></Link>
-                    <Link className={navItem}to='categories'><Button color="inherit">Categories</Button></Link>
+                    <Link className={navItem}to='/categories'><Button color="inherit">Categories</Button></Link>
+                    <Link className={navItem}to='/menues'><Button color="inherit">Menues</Button></Link>
                 </Box>
                 </Toolbar>
             </AppBar>
